@@ -1,0 +1,327 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Faustina', serif;
+	line-height: 1.5;
+	height: 100vh;
+}
+
+header {
+	text-align: center;
+	padding: 10px;
+	font-size: 28px;
+	background-color: #050A30;
+	height: 10vh;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.logo {
+	width: 115px;
+	height: 70px;
+	padding-right: 20px;
+}
+
+.logo img {
+	width: 150px;
+	height: 150px;
+}
+
+.menu-toggle {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.menu-toggle span {
+	height: 5px;
+	width: 30px;
+	background-color: #fff;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.nav-links li {
+    margin-right: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a:hover {
+	color: #FFF800;
+}
+
+.title-section {
+    text-align: center;
+    background: rgb(155,221,255);
+    background: linear-gradient(0deg, rgba(155,221,255,1) 0%, rgba(137,207,240,1) 50%, rgba(155,221,255,1) 100%);
+    border: 1px solid #000;
+    padding: 10px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-section h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+.title-section h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.title-section p {
+    font-size: 24px;
+    display: flex;
+	margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 24px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+    border: 1px solid #000;
+	padding: 20px;
+}
+
+.green-section {
+	display: flex;
+	flex-direction: column;
+	font-size: 24px;
+	justify-content: center;
+	align-items: center;
+	background: rgb(155,221,255);
+    background: linear-gradient(0deg, rgba(155,221,255,1) 0%, rgba(137,207,240,1) 50%, rgba(155,221,255,1) 100%);
+    border: 1px solid #000;
+	padding: 20px;
+	color: #050A30;
+}
+
+.green-section h1 {
+	font-size: 38px;
+}
+
+.green-section h2 {
+	font-size: 26px;
+}
+
+.clinic-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	padding: 20px;
+	color: #050A30;
+}
+
+.clinic-info h2{
+	font-size: 30px;
+}
+
+.clinic-details {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.clinic-details p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+.clinic-details svg {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.clinic-details span {
+    font-size: 24px;
+    text-align: center; 
+    display: block; 
+    width: 100%; 
+    margin-top: 5px; 
+    margin-bottom: 5px;
+}
+
+.clinic-image {
+	width: 100%;
+	height: auto;
+	max-width: 900px;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.guidance-details {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 15px;   
+    align-items: center;     
+    flex-wrap: wrap;
+}
+
+.guidance-details a {
+	flex-direction: row;
+    margin: 0 10px;         
+}
+
+.guidance-details p {
+    margin: 15px 0;          
+}
+
+.guidance-details svg {
+    margin-right: 10px;      
+    vertical-align: middle;  
+}
+
+.guidance-details span {
+    margin-left: 5px;      
+}
+
+.green-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.L-info,
+.R-info {
+	width: 45%;
+	flex-direction: column;
+	margin: 0 10px;
+}
+
+footer {
+	text-align: center;
+	padding: 10px;
+	font-size: 16px;
+	background-color: #050A30;
+	color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+	header,
+	section,
+	.button-section,
+	footer {
+		padding: 10px;
+	}
+
+	.menu-toggle {
+		display: flex;
+	}
+
+	.nav-links {
+		display: none;
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		background-color: #050A30;
+		z-index: 1;
+	}
+		
+	.nav-links.show {
+		display: flex;
+	}
+
+	.nav-links li {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.L-info,
+	.R-info {
+		width: 100%;
+		margin: 0;
+	}
+
+	.green-section {
+		flex-direction: column;
+	}
+
+	.clinic-details p {
+        flex-direction: row; 
+        align-items: center; 
+    }
+
+    .clinic-details svg {
+        margin-right: 10px; 
+    }
+
+    .clinic-details span {
+        display: inline; 
+    }
+
+    .clinic-details svg {
+        margin-right: 0; 
+    }
+
+    .clinic-image {
+        width: 100%;
+        max-width: 90%; 
+        margin-top: 20px;
+        padding: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+	.title-section h1 {
+        font-size: 32px;
+    }
+
+    .title-section h2 {
+        font-size: 22px;
+    }
+
+    .green-section h1,
+    .clinic-info h1 {
+        font-size: 32px;
+    }
+	
+	.green-section h2,
+	.clinic-info h2 {
+		font-size: 28px;
+	}
+}

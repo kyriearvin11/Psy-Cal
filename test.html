@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSY-CAL</title>
+    <link rel="stylesheet" href="css/style-test.css">
+	<link rel="icon" href="images/Logo.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Faustina:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo.png" alt="Logo.png"></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="test.html">Test</a></li>
+                <li><a href="clinic.html">Clinics</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+				<li><a href="exercise.html">Exercises</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="title-section">
+        <h1>Anxiety Awareness Test</h1>
+    </section>
+    
+    <form id="testForm" action="https://formsubmit.co/9fbb345742d28c32841c7530cf065305" method="POST">
+		<section class="form-section">
+			<div class="fillup">
+				<label for="Student_ID">Enter your Student ID:</label>
+				<input type="number" id="Student_ID" name="Student_ID">
+
+				<label for="name">Enter your Name:</label>
+				<input type="text" id="name" name="name">
+
+				<label for="email">Enter your Email:</label>
+				<input type="email" id="email" name="Email">
+
+				<input type="hidden" name="_cc" value="">
+				<input type="hidden" name="_template" value="table">
+				<input type="text" name="_honey" style="display:none">
+				<input type="hidden" name="_next" value="https://kyriearvin11.github.io/Psy-Cal/clinic.html">
+				<input type="hidden" id="testResult" name="Your Test Result" value="">
+				<input type="hidden" name="_autoresponse" value="You are required to go to the School Clinic ">
+
+				<div class="terms-container">
+					<input type="checkbox" id="termsCheckbox" name="termsCheckbox">
+					<label for="termsCheckbox">I agree to the <a href="https://www.termsfeed.com/live/f7698038-5096-47e3-a112-7e5c2a8fe8ae" target="_blank">Terms & Conditions</a>.</label>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="radio-section">
+				<label for="q1">1. Anxious Mood: Worries, anticipation of the worst, fearful anticipation, irritability.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q1_option0" name="q1" value="0">
+					<label for="q1_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q1_option1" name="q1" value="1">
+					<label for="q1_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q1_option2" name="q1" value="2">
+					<label for="q1_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q1_option3" name="q1" value="3">
+					<label for="q1_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q1_option4" name="q1" value="4">
+					<label for="q1_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section class="green-section">
+			<div class="radio-section">
+				<label for="q2">2. Tension: Feelings of tension, fatigability, startle response, moved to tears easily, trembling, feelings of restlessness, inability to relax.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q2_option0" name="q2" value="0">
+					<label for="q2_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q2_option1" name="q2" value="1">
+					<label for="q2_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q2_option2" name="q2" value="2">
+					<label for="q2_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q2_option3" name="q2" value="3">
+					<label for="q2_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q2_option4" name="q2" value="4">
+					<label for="q2_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="radio-section">
+				<label for="q3">3. Fear: Of dark, of strangers, of being left alone, of animals, of traffic, of crowds.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q3_option0" name="q3" value="0">
+					<label for="q3_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q3_option1" name="q3" value="1">
+					<label for="q3_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q3_option2" name="q3" value="2">
+					<label for="q3_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q3_option3" name="q3" value="3">
+					<label for="q3_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q3_option4" name="q3" value="4">
+					<label for="q3_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section class="green-section">
+			<div class="radio-section">
+				<label for="q4">4. Insomia: Difficulty in falling asleep, broken sleep, unsatisfying sleep and fatigue on waking, dreams, nightmares, night terrors.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q4_option0" name="q4" value="0">
+					<label for="q4_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q4_option1" name="q4" value="1">
+					<label for="q4_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q4_option2" name="q4" value="2">
+					<label for="q4_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q4_option3" name="q4" value="3">
+					<label for="q4_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q4_option4" name="q4" value="4">
+					<label for="q4_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="radio-section">
+				<label for="q5">5. Intellectual: Difficulty in concentration, poor memory.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q5_option0" name="q5" value="0">
+					<label for="q5_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q5_option1" name="q5" value="1">
+					<label for="q5_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q5_option2" name="q5" value="2">
+					<label for="q5_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q5_option3" name="q5" value="3">
+					<label for="q5_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q5_option4" name="q5" value="4">
+					<label for="q5_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section class="green-section">
+			<div class="radio-section">
+				<label for="q6">6. Depressed Mood: Loss of interest, lack of pleasure in hobbies, depression, early waking, diurnal swing.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q6_option0" name="q6" value="0">
+					<label for="q6_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q6_option1" name="q6" value="1">
+					<label for="q6_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q6_option2" name="q6" value="2">
+					<label for="q6_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q6_option3" name="q6" value="3">
+					<label for="q6_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q6_option4" name="q6" value="4">
+					<label for="q6_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="radio-section">
+				<label for="q7">7. Somatic(Muscular): Pains and aches, twitching, stiffness, myoclonic jerks, grinding of teeth, unsteady voice, increased muscular tone.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q7_option0" name="q7" value="0">
+					<label for="q7_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q7_option1" name="q7" value="1">
+					<label for="q7_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q7_option2" name="q7" value="2">
+					<label for="q7_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q7_option3" name="q7" value="3">
+					<label for="q7_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q7_option4" name="q7" value="4">
+					<label for="q7_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section class="green-section">
+			<div class="radio-section">
+				<label for="q8">8. Somatic(Sensory): Tinnitus, blurring of vision, hot and cold flushes, feelings of weakness, pricking sensation.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q8_option0" name="q8" value="0">
+					<label for="q8_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q8_option1" name="q8" value="1">
+					<label for="q8_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q8_option2" name="q8" value="2">
+					<label for="q8_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q8_option3" name="q8" value="3">
+					<label for="q8_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q8_option4" name="q8" value="4">
+					<label for="q8_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="radio-section">
+				<label for="q9">9. Cardiovascular Symptoms: Tachycardia, palpitations, pain in chest, throbbing of vessels, fainting feelings, missing beat.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q9_option0" name="q9" value="0">
+					<label for="q9_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q9_option1" name="q9" value="1">
+					<label for="q9_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q9_option2" name="q9" value="2">
+					<label for="q9_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q9_option3" name="q9" value="3">
+					<label for="q9_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q9_option4" name="q9" value="4">
+					<label for="q9_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section class="green-section">
+			<div class="radio-section">
+				<label for="q10">10. Respiratory Symptoms: Pressure or constriction in chest, choking feelings, sighing, dyspnea.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q10_option0" name="q10" value="0">
+					<label for="q10_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q10_option1" name="q10" value="1">
+					<label for="q10_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q10_option2" name="q10" value="2">
+					<label for="q10_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q10_option3" name="q10" value="3">
+					<label for="q10_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q10_option4" name="q10" value="4">
+					<label for="q10_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="radio-section">
+				<label for="q11">11. Gastrointestinal Symptoms: Difficulty in swallowing, wind abdominal pain, burning sensations, abdominal fullness, nausea, vomiting, borborygmi, looseness of bowels, loss of weight, constipation.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q11_option0" name="q11" value="0">
+					<label for="q11_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q11_option1" name="q11" value="1">
+					<label for="q11_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q11_option2" name="q11" value="2">
+					<label for="q11_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q11_option3" name="q11" value="3">
+					<label for="q11_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q11_option4" name="q11" value="4">
+					<label for="q11_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section class="green-section">
+			<div class="radio-section">
+				<label for="q12">12. Genitourinary Symptoms: Frequency of micturition, urgency of micturition, amenorrhea, menorrhagia, development of frigidity, premature ejaculation, loss of libido, impotence.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q12_option0" name="q12" value="0">
+					<label for="q12_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q12_option1" name="q12" value="1">
+					<label for="q12_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q12_option2" name="q12" value="2">
+					<label for="q12_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q12_option3" name="q12" value="3">
+					<label for="q12_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q12_option4" name="q12" value="4">
+					<label for="q12_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="radio-section">
+				<label for="q13">13. Automatic Symptoms: Dry mouth, flushing, pallor, tendency to sweat, giddiness, tension headache, raising of hair.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q13_option0" name="q13" value="0">
+					<label for="q13_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q13_option1" name="q13" value="1">
+					<label for="q13_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q13_option2" name="q13" value="2">
+					<label for="q13_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q13_option3" name="q13" value="3">
+					<label for="q13_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q13_option4" name="q13" value="4">
+					<label for="q13_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section class="green-section">
+			<div class="radio-section">
+				<label for="q14">14. Behavior at Interview: Fidgeting, restlessness or pacing, tremor of hands, furrowed brow, strained face, sighing or rapid respiration, facial pallor, etc.</label><br>
+				<div class="radio-container">
+					<input type="radio" id="q14_option0" name="q14" value="0">
+					<label for="q14_option0"><span>0 - Not present</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q14_option1" name="q14" value="1">
+					<label for="q14_option1"><span>1 - Mild</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q14_option2" name="q14" value="2">
+					<label for="q14_option2"><span>2 - Moderate</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q14_option3" name="q14" value="3">
+					<label for="q14_option3"><span>3 - Severe</span></label>
+				</div>
+				<div class="radio-container">
+					<input type="radio" id="q14_option4" name="q14" value="4">
+					<label for="q14_option4"><span>4 - Very Severe</span></label>
+				</div>
+			</div>
+		</section>
+		<section>
+			<button type="submit" id="submitButton" class="hover-button" onclick="submitTest(event)">
+				<img src="images/submit.png" alt="submit.png" class="button-icon">
+				Submit
+			</button>
+		</section>
+	
+		<div id="popupResult" class="popup">
+			<span class="popuptext" id="resultText">Your result is:</span></br>
+			<span class="popupsubtext" id="subtext">Would you like to send a copy of the result to your email. It can be used if ever you would want to have a check up.</span>
+			<div class="button-container">
+				<button onclick="closePopup()" class="close-button">Close</button>
+				<button type="submit" class="submit-button">Submit</button>
+				<!--<button class="send-phone-button" onclick="sendToPhone()">Send to Phone</button>-->
+			</div>
+		</div>
+	</form>
+	
+	<!---
+	<div id="phonePopupForm" class="popup">
+		<form id="phoneForm" onsubmit="submitPhoneForm(event)">
+			<input type="hidden" name="passcode" id="passcodeInput" value="96bc94e13d2ba4d8355e965f8266acb2" />
+			<label for="newRecipientInput">Enter your Phone Number:</label>
+			<input type="tel" id="newRecipientInput" required />
+			<input type="hidden" name="_cc" value="">
+			<input type="hidden" id="testResult" name="Your Test Result" value="">
+			<div class="button-container">
+				<button type="button" onclick="closePopup()" class="close-button">Close</button>
+				<button type="submit" class="submit-button">Submit</button>
+			</div>
+		</form>
+	</div>
+	-->
+
+    <footer>
+        <p>&copy; 2024 PSY-CAL. All rights reserved.</p>
+    </footer>
+
+	<script src="js/answer.js"></script>
+	<script src="js/script.js"></script>
+	<!--<script src="sms.js"></script>-->
+</body>
+</html>

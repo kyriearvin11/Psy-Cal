@@ -1,0 +1,571 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Faustina', serif;
+    line-height: 1.5;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    font-size: 28px;
+    background-color: #050A30;
+    height: 10vh;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+}
+/*
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.dropdown-menu {
+    min-width: 300px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data {
+    display: none;
+}
+
+.g-signin2 {
+    position:absolute;
+}
+
+*/
+
+.logo {
+    width: 115px; 
+    height: 70px; 
+    padding-right: 20px; 
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 5px;
+    width: 30px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a:hover {
+    color: #FFF800;
+}
+
+.title-section {
+    text-align: center;
+    background: linear-gradient(0deg, rgba(155,221,255,1) 0%, rgba(137,207,240,1) 50%, rgba(155,221,255,1) 100%);
+    border: 1px solid #000;
+    padding: 10px;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-section h1 {
+    font-size: 38px;
+    margin-bottom: 10px; 
+}
+
+.title-section h2 {
+    font-size: 26px;
+	margin-bottom: 10px;
+}
+
+.carousel-inner {
+    max-height: 1800px; 
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.green-section {
+    display: flex;
+    flex-direction: row; 
+    font-size: 24px;
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(0deg, rgba(155,221,255,1) 0%, rgba(137,207,240,1) 50%, rgba(155,221,255,1) 100%);
+    border: 1px solid #000;
+    padding: 20px;
+    color: #050A30;
+}
+
+.green-section h1 {
+    font-size: 38px;
+}
+
+.green-section h2 {
+    font-size: 26px; 
+}
+
+.clinic-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(155,221,255,1) 0%, rgba(137,207,240,1) 50%, rgba(155,221,255,1) 100%);
+    border: 1px solid #000;
+    padding: 10px;
+    color: #050A30;
+}
+
+.clinic-details {
+    width: 100%; 
+    max-width: 600px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.clinic-details p {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 5px;
+}
+
+.clinic-details svg {
+    margin-right: 10px; 
+}
+
+.clinic-details span {
+    text-align: center; 
+}
+
+.clinic-image {
+    width: 100%; 
+    height: auto;
+    max-width: 80%; 
+    margin-top: 20px;
+	padding: 20px
+}
+
+
+.green-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.L-info,
+.R-info {
+    width: 45%;
+    margin: 0 30px 25px 30px;
+    flex-direction: row; 
+}
+
+.button-section {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-section h1 {
+    font-size: 38px;
+    margin-bottom: 10px; 
+}
+
+.hover-button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 48px;
+    background-color: #FFF800;
+    color: #333;
+    border: 5px solid #050A30;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hover-button:hover {
+    background-color: #FFD700;
+    transform: scale(1.2);
+}
+
+.FAQ {
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.FAQ h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+.left-column,
+.right-column {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.box {
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 10px;
+    width: calc(100% - 40px); 
+    box-sizing: border-box;
+}
+
+.box h2 {
+    font-size: 24px;
+}
+
+.box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.box ul li {
+    margin-bottom: 10px;
+    font-size: 18px; 
+}
+
+.box ul li:before {
+    content: "-";
+    margin-right: 5px;
+}
+
+.button-icon {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.Exercise-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(155,221,255,1) 0%, rgba(137,207,240,1) 50%, rgba(155,221,255,1) 100%);
+    border: 1px solid #000;
+    padding: 20px;
+    color: #050A30;
+}
+
+.Exercise-section h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.Exercise-section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.Exercise-section p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+.contact-info h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.contact-info h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    width: 50%;
+    margin-top: 20px; 
+}
+
+.contact-row p {
+    display: flex;
+    align-items: center; 
+    margin: 5px 0; 
+    width: 100%; 
+}
+
+.contact-row a,
+.contact-row p {
+    display: flex;
+    align-items: center; 
+}
+
+.contact-info svg {
+    margin-right: 10px; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #050A30;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    header,
+    section,
+    .button-section,
+    footer {
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #050A30;
+        z-index: 1;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .L-info,
+    .R-info {
+        width: 100%;
+        margin: 0;
+    }
+
+    .radio-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .green-section {
+        flex-direction: column;
+    }
+
+    .radio-container {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    .carousel-container {
+        max-width: 100%; 
+    }
+
+    .carousel-item {
+        height: auto;
+    }
+
+    .clinic-details p {
+        flex-direction: row; 
+        align-items: center; 
+    }
+
+    .clinic-details svg {
+        margin-right: 10px; 
+    }
+
+    .clinic-details span {
+        display: inline; 
+    }
+
+    .clinic-details svg {
+        margin-right: 0;
+    }
+
+    .clinic-image {
+        width: 100%;
+        max-width: 80%; 
+        margin-top: 20px;
+        padding: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Exercise-section h1 {
+        font-size: 32px;
+    }
+
+    .Exercise-section h2 {
+        font-size: 22px;
+    }
+
+    .video-container {
+        margin-bottom: 10px;
+        width: 100%;
+        padding-top: 56.25%;
+        position: relative;
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .title-section h1 {
+        font-size: 32px;
+    }
+
+    .title-section h2 {
+        font-size: 22px;
+    }
+
+    .green-section h1,
+    .clinic-info h1 {
+        font-size: 32px;
+    }
+	
+	.green-section h2,
+	.clinic-info h2 {
+		font-size: 28px;
+	}
+    
+    .L1-box,
+    .R1-box,
+    .L2-box,
+    .R2-box {
+        width: 100%;
+        margin: 0; 
+    }
+
+    .box {
+        width: calc(100% - 10px); 
+        margin: 10px; 
+    }
+
+    .button-section h1 {
+        font-size: 32px;
+    }
+
+    .hover-button {
+        font-size: 36px;
+        padding: 12px 24px;
+    }
+
+	.contact-info {
+        font-size: 20px;
+    }
+
+    .contact-info h1 {
+        font-size: 32px;
+    }
+
+    .contact-info h2 {
+        font-size: 22px;
+    }
+	
+	.contact-row {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+    }
+
+    .contact-row p {
+        flex: 0 0 100%; 
+        margin: 10px 0;
+    }
+
+}

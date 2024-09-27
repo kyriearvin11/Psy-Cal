@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-signin-client_id" content="1048897060397-irkkt22jbfio4eut9ap6tc4muk6dpc9o.apps.googleusercontent.com">
+    <title>PSY-CAL</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="images/Logo.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Faustina:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo.png" alt="Logo.png"></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="test.html">Test</a></li>
+                <li><a href="clinic.html">Clinics</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+				<li><a href="exercise.html">Exercises</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+			<!--
+			<div class="dropdown">
+				<a href="#" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+					<img src="images/profile-icon.png" alt="Profile" class="profile-icon">
+				</a>
+				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+					<li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
+					<li><p>Name</p></li>
+					<p id="name" class="alert alert-success"></p>
+					<li><p>Profile Pic</p></li>
+					<img id="image" class="rounded-circle" width="100" height="100"/>
+					<li><p>Email</p></li>
+					<p id="email"></p>
+					<button type="button" class="btn btn-danger" onclick="signOut();">Sign Out</button>
+				</ul>
+			</div>
+			-->
+        </div>
+    </header>
+
+    <section class="title-section">
+        <h1>PSY-CAL</h1>
+		<h2>Psychological-Calculator: Have A Check Up On Yourself</h2>
+    </section>
+	
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/1.png" class="d-block w-100" alt="1.png">
+            </div>
+            <div class="carousel-item">
+                <img src="images/2.png" class="d-block w-100" alt="2.png">
+            </div>
+            <div class="carousel-item">
+                <img src="images/3.png" class="d-block w-100" alt="3.png">
+            </div>
+            <div class="carousel-item">
+                <img src="images/4.png" class="d-block w-100" alt="4.png">
+            </div>
+            <div class="carousel-item">
+                <img src="images/5.png" class="d-block w-100" alt="5.png">
+            </div>
+            <div class="carousel-item">
+                <img src="images/6.png" class="d-block w-100" alt="6.png">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="green-section">
+        <div class="L-info">
+			<h2>Depression</h2>
+            <p>Depressive disorder (also known as depression) is a common mental disorder. It involves a depressed mood or loss of pleasure or interest in activities for long periods of time.</p>
+        </div>
+        <div class="R-info">
+			<h2>Anxiety</h2>
+            <p>Anxiety is a natural emotion. However, it can also cause physical symptoms, such as shaking and sweating. Anxiety disorders can affect daily life and can improve with treatment.</p>
+        </div>
+    </section>
+
+    <div class="button-section">
+        <div class="B-info">
+			<h1>Anxiety Awareness Test</h1>
+            <p>Know whether you are experiencing Depression or Anxiety by taking our test</p>
+        </div>
+			<a href="test.html" class="hover-button">
+			<img src="images/test.png" alt="test.png" class="button-icon">
+			Take a Test
+			</a>
+    </div>
+	
+	<section class="clinic-info">
+    <h1>Clinics</h1>
+    <h2>Divine Mercy Psychiatric Facility INC.</h2>
+    
+    <div class="clinic-details">
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-map" viewBox="0 0 24 25">
+                <path d="M8 0a8 8 0 0 1 6.397 12.981l-6.3 9.45a.5.5 0 0 1-.794 0l-6.3-9.45A8 8 0 0 1 8 0zm0 2a6 6 0 0 0-4.62 9.878l4.137 6.206a.5.5 0 0 0 .866 0l4.137-6.206A6 6 0 0 0 8 2zm0 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+            </svg>
+            <span>455 Boni Avenue. New Zaniga, Mandaluyong City</span>
+        </p>
+        
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+            <a href="https://www.facebook.com/profile.php?id=100063892453939">Divine Mercy Psychiatric Facility INC.</a>
+        </p>
+        
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+            </svg>
+            <span>divinemercypsychiatricfacility@yahoo.com</span>
+        </p>
+    </div>
+    <img src="images/clinic.png" alt="clinic.png" class="clinic-image">
+    
+    <a href="clinic.html" class="hover-button">
+        <img src="images/hospital.svg" alt="hospital.svg" class="button-icon">
+        Visit Clinics
+    </a>
+	</section>
+	
+	<section class="FAQ">
+		<h1>Frequently Asked Questions(FAQ)</h1>
+		<div class="content">
+			<div class="left-column">
+				<div class="L1-box box">
+					<h2>What is the test being used for the exam?</h2>
+					<ul>
+						<li>The objective of the test is to assess the severity of symptoms of anxiety. Each question of the test
+							is defined by a series of symptoms, and measures both psychic anxiety and somatic anxiety. 
+							There are a lot of automatic anxiety tests on the internet, some are also adapted from established 
+							research psychology institutions just like HAM-A, this can endanger the researchers thesis because 
+							the thesis must be unique.</li>
+					</ul>
+				</div>
+				<div class="L2-box box">
+					<h2>What to do If ever a person receives a Mild Severity Result, Mild to Moderate Severity Result, or Moderate to Severe Result</h2>
+					<ul>
+						<li>Answering our test would provide results based on the computation of your test as it has an application of likert scale
+							and would produce result from "Not Present", "Mild Severity", "Mild to Moderate Severity", or "Moderate to Severe". Check Our FAQ to know More.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right-column">
+				<div class="R1-box box">
+					<h2>What is the difference between anxiety and depression?</h2>
+					<ul>
+						<li>Anxiety and depression are types of mood disorders. Among other things, depression causes feelings of 
+							sadness, hopelessness, and reduced energy. Anxiety creates feelings of nervousness, worry, or dread. 
+							Although the two conditions are different, you can have both at the same time. 
+							Agitation and restlessness can be symptoms of both depression and anxiety.
+						</li>
+					</ul>
+				</div>
+				<div class="R2-box box">
+					<h2>Are there any support groups people can join?</h2>
+					<ul>
+						<li>Facebook have groups support groups that could help with managing Anxiety and Depression:
+							<li><a href="https://www.facebook.com/groups/440646101390027/">Anxiety, depression, panic,and stress support group</a></li>
+							<li><a href="https://www.facebook.com/groups/2752414714979406/">Depression, Anxiety & Mental Health Support Forum</a></li>
+							<li><a href="https://www.facebook.com/groups/813864203000958">Anxiety, Depression, Stress, Natural Treatment Philippines</a></li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<a href="FAQ.html" class="hover-button">
+			<img src="images/FAQ.png" alt="FAQ.png" class="button-icon">
+			Check FAQ
+		</a>
+	</section>
+	
+	<section class="Exercise-section">
+		<h1>Exercises</h1>
+		<h2>6 Daily Habits to Reduce Stress & Anxiety:</h2>
+		<div class="video-container">
+			<iframe width="1080" height="600" src="https://www.youtube.com/embed/o18I23HCQtE" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<p>View more videos that could help reduce the feelings of Anxiety or Depression:</p>
+		
+		<a href="exercise.html" class="hover-button">
+			<img src="images/play.png" alt="play.png" class="button-icon">
+			View Exercises
+		</a>
+	</section>
+	
+	<section class="contact-info">
+		<h1>Contact</h1>
+		<h2>Don Bosco Technical College: Guidance Office</h2>
+		<span>
+			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+            </svg>dbmanda.guidanceoffice@one-bosco.org
+		</span>
+		<p>
+			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+			</svg>(+632) 8531-80-81 to 83
+		</p>
+		<span>
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-map" viewBox="0 0 24 25">
+				<path d="M8 0a8 8 0 0 1 6.397 12.981l-6.3 9.45a.5.5 0 0 1-.794 0l-6.3-9.45A8 8 0 0 1 8 0zm0 2a6 6 0 0 0-4.62 9.878l4.137 6.206a.5.5 0 0 0 .866 0l4.137-6.206A6 6 0 0 0 8 2zm0 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+			</svg>736 Gen. Kalentong St., Brgy. Pag-asa, Mandaluyong City, Metro Manila
+        </span>
+
+		<h2>To see the creators of the website click the contact button to view.</h2>
+		<a href="test.html" class="hover-button">
+			<img src="images/phone.png" alt="phone.png" class="button-icon">
+			Contacts
+		</a>
+	</section>
+
+    <footer>
+        <p>&copy; 2024 PSY-CAL. All rights reserved.</p>
+    </footer>
+
+	<script src="js/script.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
